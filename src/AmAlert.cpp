@@ -56,7 +56,7 @@ bool AmAlert::send(String massage, Am_Alert_Massage_Option_t *option) {
 #endif
     }
 
-    int ret = this->client->connect("notify-api.line.me", 443);
+    int ret = this->client->connect("alert.artronshop.co.th", 443);
     if (ret <= 0) {
         ESP_LOGE(TAG, "connect to LINE server fail code : %d", ret);
         return false;
